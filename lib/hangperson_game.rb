@@ -44,7 +44,7 @@ class HangpersonGame
   def check_win_or_lose
     if !self.word_with_guesses.include? '-'
       :win
-    elsif self.word_with_guesses.include? '-' and self.guesses.length + self.wrong_guesses.length == 7
+    elsif self.word_with_guesses.include? '-' and self.wrong_guesses.length == 7
       :lose
     else
       :play
